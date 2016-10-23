@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>ONE ROOF</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body>
+    <header class="<?php echo ( !isset($_GET["city"]) ? 'hide' : ''); ?>">
+      <div class="container">
+        <div class="row">
+
+          <h1 class="title"><a href="index.html">ONE ROOF</a></h1>
+
+          <div class="your-location">
+            <?php
+
+              function distance($lat1, $lon1, $lat2, $lon2, $unit) {
+
+                $theta = $lon1 - $lon2;
+                $dist = sin(deg2rad($lat1)) * sin(deg2rad($lat2)) +  cos(deg2rad($lat1)) * cos(deg2rad($lat2)) * cos(deg2rad($theta));
+                $dist = acos($dist);
+                $dist = rad2deg($dist);
+                $miles = $dist * 60 * 1.1515;
+                $unit = strtoupper($unit);
+
+                if ($unit == "K") {
+                  return ($miles * 1.609344);
+                } else if ($unit == "N") {
+                    return ($miles * 0.8684);
+                  } else {
+                      return $miles;
+                    }
+              }
+
+
+              if (isset($_GET["street"]) && isset($_GET["city"]) && isset($_GET["state"])){
+                $street = $_GET["street"];
+                $city = $_GET["city"];
+                $state = $_GET["state"];
+                echo '<p>'.$street.'</p>';
+                echo '<p>'.$city.', '.$state.'</p>';
+                // echo '<input type="checkbox" class="input-toggle" id="change-toggle"><label class="change-toggle" for="change-toggle">Change Address</label>';
+              }
+            ?>
+            <!-- <a class="change" href="#">CHANGE</a> -->
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="change-form-wrapper">
+      <?php
+        if (isset($_GET["street"]) && isset($_GET["city"]) && isset($_GET["state"])){
+          echo '<input type="checkbox" class="input-toggle" id="toggle"><label class="change-toggle" for="toggle">Change Address</label>
+          <form class="form-inline input-location change-location" action="index.html">
+                  <input type="text" name="street" placeholder="Street Address">
+                  <input type="text" name="city" placeholder="City">
+                  <input type="text"  name="state" placeholder="State">
+                  <button type="submit">SAVE</button>
+                </form>';
+          } 
+      ?>
+    </div>
+    
+
+    <!-- GET LONG AND LAT OF ACURRENT ADDRESS -->
+
+    <?php
+      $street = str_replace(" ","+",$street);
+      $city = str_replace(" ","+",$city);
+
+      // Get cURL resource
+      $curl = curl_init();
+      // Set some options - we are passing in a useragent too here
+      curl_setopt_array($curl, array(
+          CURLOPT_RETURNTRANSFER => 1,
+          CURLOPT_URL => 'https://maps.googleapis.com/maps/api/geocode/json?address='.$street.',+'.$city.',+'.$state.'&key=AIzaSyCadUl2N3NYMz7d87qEKk_6SxV3a-Cdxl4',
+          CURLOPT_USERAGENT => 'Codular Sample cURL Request'
+      ));
+      // Send the request & save response to $resp
+      $resp = curl_exec($curl);
+      // Close request to clear up some resources
+      curl_close($curl);
+
+      $respDecoded = json_decode($resp, true);
+      $lat = $respDecoded["results"][0]["geometry"]["location"]["lat"];
+      $lng = $respDecoded["results"][0]["geometry"]["location"]["lng"];
+      //echo $lat.' <br />' .$lng;
+    ?>
+
+    <main>
+      <!-- PARSE JSON -->
+      <?php
+        // $string = file_get_contents("sampleProviders.json");
+        // $json_a = json_decode($string, true);
+        // usort(
+        //   $json_a,
+        //   function($a, $b) {
+        //     if ($a['milesAway'] == $b['milesAway']) {
+        //       return 0;
+        //     }
+        //     return ($a['milesAway'] < $b['milesAway']) ? -1 : 1;
+        // });
+        // $json = json_encode($json_a);
+
+        // $json_a = json_decode($json, true);
+      ?>
+
+      <!-- CALL TO API -->
+      <?php 
+        $url = 'https://morning-bayou-42533.herokuapp.com/provider/nearby?lat='.$lat.'&lon='.$lng.'';
+
+        //  Initiate curl
+        $ch = curl_init();
+        // Disable SSL verification
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+        // Will return the response, if false it print the response
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        // Set the url
+        curl_setopt($ch, CURLOPT_URL,$url);
+        // Execute
+        $result=curl_exec($ch);
+        // Closing
+        curl_close($ch);
+
+        // Will dump a beauty json :3
+        $json_a = json_decode($result, true);
+        //var_dump($json_a[0]['obj']);
+        // echo $json_a['dis'];
+      ?>
+
+
+
+      <div class="landing-bg <?php echo ( isset($_GET["city"]) ? 'hide' : ''); ?>">
+        <img src="/images/oneRoofFull.svg">
+        <h1>FIND A PROVIDER<br />NEAR YOU</h1>
+        <form class="landing-form" action="index.html">
+          <input type="text" name="street" placeholder="Street Address">
+          <input type="text" name="city" placeholder="City">
+          <input type="text"  name="state" placeholder="State">
+          <button type="submit">SAVE</button>
+        </form>
+      </div>
+
+
+
+      <!-- START FOR EACH -->
+
+      <?php foreach ($json_a as $users => $user) { ?>
+          <div class="shelter-list-component <?php echo ( !isset($_GET["city"]) ? 'hide' : ''); ?>">
+            <div class="container">
+
+            <div class="teaser row">
+              <h1 class="title"><?php echo $user['obj']['name'] ?></h1>
+              <section>
+                <div class="stats open-beds">
+                  <p><?php echo $user['obj']['totalBeds'] - $user['obj']['occupiedBeds']?></p>
+                  <h3>Beds Open</h3>
+                </div>
+                <div class="stats doors-close">
+                  <p>
+                    <span class="minutes">
+                    <?php
+                      $to_time = strtotime("2008-12-13 10:42:00");
+                      $from_time = strtotime("2008-12-13 10:21:00");
+                      echo round(abs($to_time - $from_time) / 60,2);
+                    ?>
+                    </span> min
+                  </p>
+                  <h3>Doors Close</h3>
+                </div>
+                <div class="stats miles-away">
+                  <p>
+                    <?php
+                      $shelterLat = $user['gpsLocation']['latitude'];
+                      $shelterLng = '-'.$user['gpsLocation']['longitude'];
+                      //echo $shelterLat .'<br />'.$shelterLng;
+                      $milesInt = distance($lat, $lng, $shelterLat, $shelterLng, "M");
+                      //echo $milesInt;
+                      // if ($milesInt < 50) {
+                      // echo number_format((float)$milesInt, 2, '.', '');
+                      // } elseif ($milesInt > 50 && isset($_GET["street"])) {
+                      // echo "> 50";
+                      // } else {
+                      // echo "n/a";
+                      // }
+                      echo $user['dis'];
+                    ?>
+                  </p>
+                  <h3>Miles Away</h3>
+                </div>
+              </section>
+              <section>
+                <div class="person-icon-container">
+                  <?php if ($user['obj']['acceptedClients']['men'] === true) { ?>
+                    <div class="icon">
+                      <img src="/images/male_icon.svg">
+                    </div>
+                  <?php } ?>
+                  <?php if ($user['obj']['acceptedClients']['women'] === true) { ?>
+                    <div class="icon">
+                      <img src="/images/female_icon.svg">
+                    </div>
+                  <?php } ?>
+                  <?php if ($user['obj']['acceptedClients']['children'] === true) { ?>
+                    <div class="icon">
+                      <img src="/images/family.svg">
+                    </div>
+                  <?php } ?>
+                  <?php if ($user['obj']['acceptedClients']['veteran'] === true) { ?>
+                    <div class="icon">
+                      <img src="/images/veterans.svg">
+                    </div>
+                  <?php } ?>
+                  <?php if ($user['obj']['acceptedClients']['handicap'] === true) { ?>
+                    <div class="icon">
+                      <img src="/images/accessible.svg">
+                    </div>
+                  <?php } ?>
+                </div>
+                <div class="button-container">
+                  <button class="shelter-toggle">SHOW MORE</button>
+                </div>
+              </section>
+            </div>
+
+            <!-- MORE INFO SECTION -->
+            <div class="full row more-info clearfix">
+              <section class="clearfix">
+                <address>
+                  <p class="phone"><?php echo $user['obj']['phone'] ?></p>
+                  <ul class="address">
+                    <li><?php echo $user['obj']['address']['line1'] ?></li>
+                    <?php
+                      $line2 = $user['obj']['address']['line2'] ? '<li>' . $user['obj']['address']['line2'] . '</li>' : null;
+                      echo $line2;
+                    ?>
+                    <li><?php echo $user['obj']['address']['city'] . ', ' . $user['obj']['address']['state'] . ' ' .  $user['obj']['address']['zip'] ?></li>
+                  </ul>
+                  <?php 
+                    $street = str_replace(" ","+",$user['obj']['address']['line1']);
+                    $city = str_replace(" ","+",$user['obj']['address']['city']);
+                    $state = str_replace(" ","+",$user['obj']['address']['state']);
+                    $zip = str_replace(" ","+",$user['obj']['address']['zip']);
+                    echo '<a class="get-directions-link" href="https://www.google.com/maps/search/'.$street.'+'.$city.',+'.$state.'+'.$zip.'">Get Directions</a>'
+                  ?>
+                </address>
+                <div class="shelter-description">
+                  <p><?php echo $user['obj']['description'] ?></p>
+                </div>
+              </section>
+            </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <?php } ?>
+      <!-- END FOR EACH -->
+
+    </main>
+
+    <footer>
+      <div class="hotline">
+        <h3>If you need assistance please call</h3>
+        <h2>1-800-555-5555</h2>
+      </div>
+      <div class="key">
+        <h3>Accepted Clients Key:</h3>
+        <div class="key-container">
+          <div class="key-icon">
+            <img src="images/accessible.svg">
+            <p>Accessible</p>
+          </div>
+          <div class="key-icon">
+            <img src="images/family.svg">
+            <p>Families</p>
+          </div>
+          <div class="key-icon">
+            <img src="images/female_icon.svg">
+            <p>Women</p>
+          </div>
+          <div class="key-icon">
+            <img src="images/male_icon.svg">
+            <p>Men</p>
+          </div>
+          <div class="key-icon">
+            <img src="images/veterans.svg">
+            <p>Veterans</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>

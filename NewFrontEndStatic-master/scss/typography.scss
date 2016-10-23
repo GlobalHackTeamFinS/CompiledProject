@@ -1,0 +1,50 @@
+h1, h2, h3 {
+	font-family: 'Lato', sans-serif;
+	font-weight: $bold;
+	margin: 0;
+}
+// h1 {
+// 	padding-left: 15px;
+// }
+h3 {
+	font-size: $small-bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+p {
+	font-family: 'Lato', sans-serif;
+	font-weight: $normal;
+	margin: 0;
+}
+.phone {
+	color: $base-color;
+	font-weight: $bold;
+	margin-top: 10px;
+}
+.address {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+	li {
+		font-weight: $normal;
+	}
+}
+.shelter-description {
+   margin-top: 10px;
+   margin-bottom: 15px;
+   @media (min-width: 600px) {
+		width: 50%;
+	}
+}
+.hotline {
+	color: #46bfff;
+	font-weight: 700;
+}
+.get-directions-link {
+	@media (min-width: 600px) {
+		margin-bottom: 10px;
+	}
+}
+.change-toggle {
+	color: #fff;
+}

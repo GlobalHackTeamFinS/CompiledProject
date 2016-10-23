@@ -1,0 +1,6 @@
+framework module Pods_team_fins {
+  umbrella header "Pods-team fins-umbrella.h"
+
+  export *
+  module * { export * }
+}

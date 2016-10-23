@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".shelter-toggle").click(function(){var e=$(this).parents(".shelter-list-component");e.hasClass("open")?(e.removeClass("open"),$(this).text("SHOW MORE")):(e.addClass("open"),$(this).text("SHOW LESS"))})}),console.log($(window).scrollTop());

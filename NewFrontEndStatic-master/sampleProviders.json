@@ -1,0 +1,467 @@
+[
+  {
+    "id": "56bafde0-d2bd-44b5-8f09-8a30d1647eaa",
+    "name": "Gateway 180",
+    "email": "sgarrett@gatewayhomelss.org",
+    "phone": "+1 (314) 231-1515",
+    "address": {
+      "line1": "1000 N. 19th Street",
+      "line2": null,
+      "city": "St. Louis",
+      "state": "MIssouri",
+      "zip": 63106
+    },
+    "registered": "2014-03-20T05:57:13 +05:00",
+    "gpsLocation": {
+      "latitude": 38.8675,
+      "longitude": 90.5364
+    },
+    "milesAway": 7.8529,
+    "acceptedClients": {
+      "men": false,
+      "women": true,
+      "children": true,
+      "veteran": true,
+      "handicap": true
+    },
+    "totalBeds": 174,
+    "occupiedBeds": 27,
+    "intakeStart": 510,
+    "intakeEnd": 1140,
+    "description": "Culpa eu fugiat duis aliquip dolore aliqua commodo eiusmod laboris sunt nostrud labore. Aliqua aliqua deserunt laboris ipsum nostrud ullamco dolore est voluptate dolor cillum est eiusmod consectetur. Fugiat anim excepteur non mollit eu nisi velit ex.\r\n"
+  },
+  {
+    "id": "c6ae669a-9496-42cd-8f94-5cfdefc2b21e",
+    "name": "Our Lady's Inn",
+    "email": "mlaubengayer@ourladysinn.org",
+    "phone": "+1 (314) 351-4590",
+    "address": {
+      "line1": "4223 S. Compton",
+      "line2": null,
+      "city": "St. Louis",
+      "state": "Missouri",
+      "zip": 63110
+    },
+    "registered": "2015-07-05T10:54:33 +05:00",
+    "gpsLocation": {
+      "latitude": 38.1148,
+      "longitude": 90.4783
+    },
+    "milesAway": 4.8891,
+    "acceptedClients": {
+      "men": false,
+      "women": true,
+      "children": true,
+      "veteran": true,
+      "handicap": false
+    },
+    "totalBeds": 18,
+    "occupiedBeds": 6,
+    "intakeStart": 1301,
+    "intakeEnd": 1421,
+    "description": "Sunt eiusmod do ad dolor eu ut adipisicing aliquip. Ipsum esse eiusmod ea pariatur elit incididunt enim est sint. Dolore voluptate duis cillum dolor sint laboris sit velit ad magna. Excepteur consectetur aute laborum laboris cupidatat laborum amet veniam eiusmod. Fugiat proident dolore dolore nisi esse. Elit ad duis Lorem in consectetur veniam consequat minim mollit.\r\n"
+  },
+  {
+    "id": "f59837fe-7da5-4403-8bc2-f861049993fa",
+    "name": "St. Peter & Paul Shelter",
+    "email": "lucyrasmussen@ohmnet.com",
+    "phone": "+1 (934) 485-2022",
+    "address": {
+      "line1": "911 Kenmore Court",
+      "line2": null,
+      "city": "Lorraine",
+      "state": "Missouri",
+      "zip": 54712
+    },
+    "registered": "2016-07-10T03:43:21 +05:00",
+    "gpsLocation": {
+      "latitude": 38.125,
+      "longitude": 90.326
+    },
+    "milesAway": 8.1132,
+    "acceptedClients": {
+      "men": false,
+      "women": false,
+      "children": false,
+      "veteran": false,
+      "handicap": true
+    },
+    "totalBeds": 37,
+    "occupiedBeds": 27,
+    "intakeStart": 1144,
+    "intakeEnd": 1264,
+    "description": "Irure exercitation mollit officia exercitation aute fugiat voluptate ex aute non. Reprehenderit occaecat velit aliquip cillum eu sunt reprehenderit nulla culpa veniam. Sint dolor reprehenderit nostrud laborum et velit ea. Culpa duis irure consequat labore sint in exercitation magna non incididunt.\r\n"
+  },
+  {
+    "id": "acb7438a-1c84-461c-b989-5dec99e34b28",
+    "name": "ISOLOGICA",
+    "email": "lucyrasmussen@isologica.com",
+    "phone": "+1 (919) 484-3697",
+    "address": {
+      "line1": "875 Grattan Street",
+      "line2": null,
+      "city": "Ruckersville",
+      "state": "New Jersey",
+      "zip": 82687
+    },
+    "registered": "2014-11-03T11:24:54 +06:00",
+    "gpsLocation": {
+      "latitude": 38.0716,
+      "longitude": 90.2306
+    },
+    "milesAway": 3.2437,
+    "acceptedClients": {
+      "men": true,
+      "women": false,
+      "children": true,
+      "veteran": false,
+      "handicap": false
+    },
+    "totalBeds": 53,
+    "occupiedBeds": 41,
+    "intakeStart": 1134,
+    "intakeEnd": 1254,
+    "description": "Aliqua cillum in fugiat elit. Aliqua cupidatat ut ex aliqua sint ea pariatur ipsum consectetur. Laborum ad proident est dolore eu elit reprehenderit nulla. Velit fugiat sunt aute ipsum qui esse irure dolore sint sunt consectetur reprehenderit non commodo.\r\n"
+  },
+  {
+    "id": "85f59969-b7b0-4b67-9e03-9517395d1d08",
+    "name": "NAMEGEN",
+    "email": "lucyrasmussen@namegen.com",
+    "phone": "+1 (869) 600-2413",
+    "address": {
+      "line1": "859 Sands Street",
+      "line2": null,
+      "city": "Connerton",
+      "state": "Kansas",
+      "zip": 27932
+    },
+    "registered": "2015-05-18T06:06:09 +05:00",
+    "gpsLocation": {
+      "latitude": 38.2914,
+      "longitude": 90.9844
+    },
+    "milesAway": 5.4352,
+    "acceptedClients": {
+      "men": true,
+      "women": false,
+      "children": true,
+      "veteran": true,
+      "handicap": true
+    },
+    "totalBeds": 74,
+    "occupiedBeds": 49,
+    "intakeStart": 1221,
+    "intakeEnd": 1341,
+    "description": "Veniam sint ut occaecat proident sit et mollit veniam. Minim pariatur ullamco minim tempor aute mollit nisi ea cillum laboris amet ad. Commodo excepteur est magna do voluptate cupidatat consequat culpa est enim ea aute mollit tempor. Deserunt nostrud nisi nisi cupidatat et id quis sit id ad.\r\n"
+  },
+  {
+    "id": "ff060feb-472e-415e-89e5-38ccb90201ff",
+    "name": "NETAGY",
+    "email": "lucyrasmussen@netagy.com",
+    "phone": "+1 (805) 594-3793",
+    "address": {
+      "line1": "226 Tompkins Avenue",
+      "line2": null,
+      "city": "Enoree",
+      "state": "Palau",
+      "zip": 46318
+    },
+    "registered": "2014-01-16T01:30:03 +06:00",
+    "gpsLocation": {
+      "latitude": 38.0329,
+      "longitude": 90.2999
+    },
+    "milesAway": 2.6233,
+    "acceptedClients": {
+      "men": true,
+      "women": true,
+      "children": false,
+      "veteran": true,
+      "handicap": true
+    },
+    "totalBeds": 52,
+    "occupiedBeds": 40,
+    "intakeStart": 1219,
+    "intakeEnd": 1339,
+    "description": "Enim ipsum esse ipsum ex do sunt sint. Duis et id irure velit mollit nulla cillum nulla nostrud sit occaecat. Dolor aliquip eu ut laboris quis commodo nostrud et amet magna irure mollit. Occaecat occaecat aliquip esse id reprehenderit. Ad proident deserunt ad aliqua proident veniam amet esse qui id ut tempor. Pariatur sint duis Lorem amet ipsum consequat. Elit elit qui ipsum reprehenderit culpa Lorem Lorem laboris in.\r\n"
+  },
+  {
+    "id": "9e8f8015-47e4-44ae-b6c9-2476ef671eb5",
+    "name": "BOILCAT",
+    "email": "lucyrasmussen@boilcat.com",
+    "phone": "+1 (962) 493-3137",
+    "address": {
+      "line1": "941 Mill Street",
+      "line2": null,
+      "city": "Healy",
+      "state": "Alaska",
+      "zip": 83654
+    },
+    "registered": "2016-06-24T11:50:45 +05:00",
+    "gpsLocation": {
+      "latitude": 38.8458,
+      "longitude": 90.0521
+    },
+    "milesAway": 9.6175,
+    "acceptedClients": {
+      "men": true,
+      "women": true,
+      "children": false,
+      "veteran": true,
+      "handicap": false
+    },
+    "totalBeds": 76,
+    "occupiedBeds": 53,
+    "intakeStart": 1283,
+    "intakeEnd": 1403,
+    "description": "Esse ipsum nostrud exercitation est enim aute proident labore amet ex excepteur consequat laborum. Officia voluptate velit exercitation ut. Ut esse esse consequat est laboris do aliqua do officia. Labore enim nulla ad eu deserunt est nulla ullamco. Aute proident reprehenderit qui officia esse dolore esse.\r\n"
+  },
+  {
+    "id": "65453376-4bd3-4215-8b3f-ef5897c236f3",
+    "name": "XERONK",
+    "email": "lucyrasmussen@xeronk.com",
+    "phone": "+1 (886) 514-3659",
+    "address": {
+      "line1": "161 Vista Place",
+      "line2": null,
+      "city": "Munjor",
+      "state": "New Mexico",
+      "zip": 99561
+    },
+    "registered": "2015-07-13T10:42:19 +05:00",
+    "gpsLocation": {
+      "latitude": 38.8515,
+      "longitude": 90.457
+    },
+    "milesAway": 3.1572,
+    "acceptedClients": {
+      "men": true,
+      "women": false,
+      "children": false,
+      "veteran": false,
+      "handicap": true
+    },
+    "totalBeds": 73,
+    "occupiedBeds": 57,
+    "intakeStart": 1219,
+    "intakeEnd": 1339,
+    "description": "Et in sit ex deserunt aute. Fugiat elit consectetur ea anim incididunt irure anim aliquip tempor excepteur ex sint et. Veniam ex aliqua elit occaecat ipsum eiusmod in. Tempor culpa exercitation aute ad nisi nisi est do nisi. Nulla amet Lorem qui magna. Aute dolore voluptate occaecat magna aliquip occaecat Lorem ipsum officia excepteur deserunt adipisicing cupidatat.\r\n"
+  },
+  {
+    "id": "f52d22d0-d822-45c8-a1c7-e3a20a475e0e",
+    "name": "KYAGORO",
+    "email": "lucyrasmussen@kyagoro.com",
+    "phone": "+1 (956) 525-3625",
+    "address": {
+      "line1": "437 Kingsway Place",
+      "line2": null,
+      "city": "Richmond",
+      "state": "New Hampshire",
+      "zip": 79501
+    },
+    "registered": "2016-02-26T01:52:26 +06:00",
+    "gpsLocation": {
+      "latitude": 38.7805,
+      "longitude": 90.4213
+    },
+    "milesAway": 0.4409,
+    "acceptedClients": {
+      "men": false,
+      "women": false,
+      "children": true,
+      "veteran": true,
+      "handicap": true
+    },
+    "totalBeds": 72,
+    "occupiedBeds": 42,
+    "intakeStart": 1223,
+    "intakeEnd": 1343,
+    "description": "Laborum deserunt laborum tempor anim. Veniam ad sint voluptate id occaecat magna aliqua veniam cupidatat laborum dolor. Ipsum consectetur nostrud magna laborum quis proident in sit officia non mollit fugiat incididunt nisi. Anim ipsum eiusmod cillum in exercitation et do nulla est aliqua ea sit ipsum laboris.\r\n"
+  },
+  {
+    "id": "e78a97d6-172a-4387-b8b9-57dc39c50c7e",
+    "name": "SKYBOLD",
+    "email": "lucyrasmussen@skybold.com",
+    "phone": "+1 (864) 559-2383",
+    "address": {
+      "line1": "696 Gardner Avenue",
+      "line2": null,
+      "city": "Glenville",
+      "state": "Wyoming",
+      "zip": 27731
+    },
+    "registered": "2014-06-19T12:48:45 +05:00",
+    "gpsLocation": {
+      "latitude": 38.705,
+      "longitude": 90.2349
+    },
+    "milesAway": 7.2303,
+    "acceptedClients": {
+      "men": true,
+      "women": true,
+      "children": true,
+      "veteran": true,
+      "handicap": false
+    },
+    "totalBeds": 38,
+    "occupiedBeds": 26,
+    "intakeStart": 1240,
+    "intakeEnd": 1360,
+    "description": "Mollit velit consequat mollit minim dolor est laboris laboris veniam ex. Commodo minim nostrud magna laboris pariatur irure nostrud deserunt dolore proident tempor. Dolor aliqua dolor deserunt voluptate nulla ullamco commodo aliquip ullamco et officia occaecat. Laboris proident dolore nulla enim do excepteur dolore tempor ad ex. Consequat ex elit anim aute ullamco magna nisi ex voluptate sint commodo voluptate ex ipsum. Officia excepteur duis tempor sunt Lorem laboris qui in.\r\n"
+  },
+  {
+    "id": "c7ea5b4a-0cb7-49f2-8fdc-810811e2428d",
+    "name": "VELITY",
+    "email": "lucyrasmussen@velity.com",
+    "phone": "+1 (932) 514-2113",
+    "address": {
+      "line1": "164 Ditmas Avenue",
+      "line2": null,
+      "city": "Driftwood",
+      "state": "American Samoa",
+      "zip": 81516
+    },
+    "registered": "2015-03-12T09:29:52 +05:00",
+    "gpsLocation": {
+      "latitude": 38.0124,
+      "longitude": 90.2902
+    },
+    "milesAway": 5.5395,
+    "acceptedClients": {
+      "men": false,
+      "women": true,
+      "children": false,
+      "veteran": false,
+      "handicap": true
+    },
+    "totalBeds": 54,
+    "occupiedBeds": 25,
+    "intakeStart": 1124,
+    "intakeEnd": 1244,
+    "description": "Et nulla eiusmod consectetur sint aliquip eu elit et do. Eu magna dolore ad exercitation nulla sit eu. Irure aliqua id et nisi anim esse ea. Incididunt nulla magna Lorem veniam elit aliquip.\r\n"
+  },
+  {
+    "id": "91fdc4d1-3643-4720-b7d5-2f38d97a58d8",
+    "name": "ZEAM",
+    "email": "lucyrasmussen@zeam.com",
+    "phone": "+1 (874) 460-2082",
+    "address": {
+      "line1": "421 Highland Place",
+      "line2": null,
+      "city": "Morningside",
+      "state": "Marshall Islands",
+      "zip": 25246
+    },
+    "registered": "2016-06-16T07:54:40 +05:00",
+    "gpsLocation": {
+      "latitude": 38.5738,
+      "longitude": 90.292
+    },
+    "milesAway": 4.7515,
+    "acceptedClients": {
+      "men": false,
+      "women": true,
+      "children": true,
+      "veteran": false,
+      "handicap": true
+    },
+    "totalBeds": 71,
+    "occupiedBeds": 59,
+    "intakeStart": 1155,
+    "intakeEnd": 1275,
+    "description": "Tempor duis eu ipsum labore. Deserunt irure elit occaecat officia. Nostrud irure excepteur est dolore occaecat nisi aliquip cupidatat esse anim ea veniam aliqua duis. Cillum exercitation cillum incididunt aliquip esse irure nisi consequat fugiat. Quis sit sint deserunt voluptate tempor. Mollit irure consequat officia eu qui qui id in sit veniam id consequat velit ad.\r\n"
+  },
+  {
+    "id": "34aa8eee-8d99-4c4c-a884-43dcbcb58d83",
+    "name": "ISOLOGIA",
+    "email": "lucyrasmussen@isologia.com",
+    "phone": "+1 (829) 553-3997",
+    "address": {
+      "line1": "951 Logan Street",
+      "line2": null,
+      "city": "Allendale",
+      "state": "Tennessee",
+      "zip": 10171
+    },
+    "registered": "2015-04-06T05:40:02 +05:00",
+    "gpsLocation": {
+      "latitude": 38.3563,
+      "longitude": 90.6122
+    },
+    "milesAway": 4.8821,
+    "acceptedClients": {
+      "men": false,
+      "women": true,
+      "children": true,
+      "veteran": true,
+      "handicap": true
+    },
+    "totalBeds": 36,
+    "occupiedBeds": 31,
+    "intakeStart": 1219,
+    "intakeEnd": 1339,
+    "description": "Eiusmod amet reprehenderit tempor esse occaecat tempor quis exercitation laboris. Laborum non consectetur Lorem duis aliquip pariatur excepteur duis nostrud labore id fugiat do eu. Cillum exercitation ullamco pariatur nisi ad qui deserunt fugiat enim ad aliquip officia aliqua aute.\r\n"
+  },
+  {
+    "id": "bbeb223e-117a-4af3-9fed-29b11e02f62a",
+    "name": "ZORROMOP",
+    "email": "lucyrasmussen@zorromop.com",
+    "phone": "+1 (938) 488-2908",
+    "address": {
+      "line1": "978 Dean Street",
+      "line2": null,
+      "city": "National",
+      "state": "Florida",
+      "zip": 97312
+    },
+    "registered": "2015-09-03T10:36:00 +05:00",
+    "gpsLocation": {
+      "latitude": 38.1496,
+      "longitude": 90.9666
+    },
+    "milesAway": 5.3708,
+    "acceptedClients": {
+      "men": false,
+      "women": false,
+      "children": true,
+      "veteran": false,
+      "handicap": false
+    },
+    "totalBeds": 31,
+    "occupiedBeds": 2,
+    "intakeStart": 1152,
+    "intakeEnd": 1272,
+    "description": "Id do labore amet sit tempor proident voluptate velit. In deserunt enim voluptate occaecat aute occaecat. Dolor minim deserunt consectetur do adipisicing ut dolore et fugiat qui in pariatur nulla. Nulla nulla dolor do velit duis elit nostrud occaecat. Ad ullamco in in est occaecat culpa occaecat proident id minim commodo. Veniam Lorem incididunt deserunt mollit commodo eiusmod minim. Nostrud culpa aliqua duis velit laboris voluptate.\r\n"
+  },
+  {
+    "id": "21b4a330-abdf-4265-bf78-06af6f53c648",
+    "name": "QUAREX",
+    "email": "lucyrasmussen@quarex.com",
+    "phone": "+1 (830) 424-2762",
+    "address": {
+      "line1": "708 Jefferson Street",
+      "line2": null,
+      "city": "Maury",
+      "state": "Washington",
+      "zip": 53474
+    },
+    "registered": "2016-04-17T07:13:08 +05:00",
+    "gpsLocation": {
+      "latitude": 38.7997,
+      "longitude": 90.4126
+    },
+    "milesAway": 3.2883,
+    "acceptedClients": {
+      "men": true,
+      "women": true,
+      "children": false,
+      "veteran": false,
+      "handicap": true
+    },
+    "totalBeds": 76,
+    "occupiedBeds": 47,
+    "intakeStart": 1261,
+    "intakeEnd": 1381,
+    "description": "Eu enim et ad nulla aliqua et sit qui. Ut in voluptate velit irure Lorem nisi magna in amet consectetur id sint est. Ex qui dolor sit cillum est. Consectetur aliqua anim consectetur in ea ex.\r\n"
+  }
+]
